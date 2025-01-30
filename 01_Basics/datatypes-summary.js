@@ -17,6 +17,8 @@
 
  const bigNumber = 12542125512552555125n
  
+
+ 
 // Reference (Non  primitive)
    
 // Array , Objects , Functions
@@ -39,6 +41,36 @@ const heros = ["shaktiman", "spiderman" , "superman"]
  console.log(typeof myFunction);  // function
  console.log(typeof anotherid);  // symbol
 
-  
 
+
+
+
+
+ // ************************************* Memories ***********************************************
+
+
+ // Stack (Primitive) , Heap (Non- Primitive)
+
+  let x = "sabyasachidotcom"
+
+  let y  = x
+      y = "Helo ji"     // stack mein changes reference value mein karte hai
+
+
+      console.log(x);
+      console.log(y);
+      
+ 
+
+ let userone = {
+   email: "xtz@anotherid.com",
+    upi: "user@ybl"
+ }
+
+ let userTwo = userone
+
+ userTwo.email = "xyz@gmail.com"    // Heap mein Changes Original Value mein a Karte hain
+
+ console.log(userone.email);
+ console.log(userTwo.email);
  
